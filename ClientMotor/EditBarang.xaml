@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ClientMotor.EditBarang">
+	<ContentPage.Content>
+		<StackLayout>
+    <Label Font="6" Text="Kode Barang" />
+    <Entry x:Name="txtkode" IsEnabled="False" Text="{Binding KodeBarang}" />
+    <Label Font="6" Text="Nama Barang" />
+    <Entry x:Name="txtnama" Text="{Binding Nama}" />
+			 <Label Font="6" Text="Id Jenis Motor" />
+    <Entry x:Name="txtidjenis" Text="{Binding IdJenisMotor}" />
+			<Label Font="6" Text="Id Kategori" />
+    <Entry x:Name="txtidkategori" Text="{Binding KategoriId}" />
+			<Label Font="6" Text="Stock" />
+    <Entry x:Name="txtstok" Text="{Binding Stok}" />
+			<Label Font="6" Text="Harga Beli" />
+    <Entry x:Name="txthargabeli" Text="{Binding HargaBeli}" />
+			<Label Font="6" Text="Harga Jual" />
+    <Entry x:Name="txthargajual" Text="{Binding HargaJual}" />
+			<Label Font="6" Text="Tanggal Beli" />
+    <DatePicker Date="{Binding TanggalBeli}" x:Name="datetanggal" />
+    <StackLayout Orientation="Horizontal">
+      <Button x:Name="btnEdit" Text="Edit" />
+      <Button x:Name="btnDelete" Text="Delete" />
+    </StackLayout>
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

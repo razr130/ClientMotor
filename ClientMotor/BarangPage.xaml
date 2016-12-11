@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ClientMotor.BarangPage">
+	<ContentPage.Content>
+		<StackLayout>
+	<ListView x:Name="lstbarang" ItemsSource="{Binding ListBarang}">
+	<ListView.ItemTemplate>
+	<DataTemplate>
+	<ViewCell>
+							
+		<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="25,10,55,25">
+
+		<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical" >
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+									<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+									<Label Font="8">Nama : </Label><Label x:Name="lblnama" Font="Bold,8" Text="{Binding Nama}" HorizontalOptions="Start"/>
+									</StackLayout>
+									<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+									<Label Font="8">Stok : </Label><Label x:Name="lblstok" Font="Bold,8" Text="{Binding Stok}" HorizontalOptions="Start"/>
+									</StackLayout>
+					</StackLayout>
+
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+									<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+									<Label Font="8">HrgBeli : </Label><Label x:Name="lblhargabeli" Font="Bold,8" Text="{Binding HargaBeli}" HorizontalOptions="Start"/>
+									</StackLayout>
+									<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+									<Label Font="8">HrgJual : </Label><Label x:Name="lblhargajual" Font="Bold,8" Text="{Binding HargaJual}" HorizontalOptions="Start"/>
+									</StackLayout>
+									<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+									<Label Font="8">Tgl : </Label><Label x:Name="lbltanggalbeli" Font="Bold,8" Text="{Binding TanggalBeli}" HorizontalOptions="Start"/>
+									</StackLayout>
+					</StackLayout>
+				</StackLayout>
+		</StackLayout>
+	</ViewCell>
+
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+		<Button x:Name="btntambah" Text="Tambah"></Button>
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

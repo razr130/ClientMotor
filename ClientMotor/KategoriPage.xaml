@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ClientMotor.KategoriPage">
+<ContentPage.Content>
+		<StackLayout>
+	<ListView x:Name="lstkategori" ItemsSource="{Binding ListKategori}">
+	<ListView.ItemTemplate>
+	<DataTemplate>
+	<ViewCell>
+							
+		<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="25,10,55,25">
+
+		<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical" >
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"><Label Font="15">Nama Kategori : </Label><Label x:Name="lblnamakategori" Font="Bold,15" Text="{Binding NamaKategori}" HorizontalOptions="Start"/></StackLayout>
+
+
+				</StackLayout>
+		</StackLayout>
+	</ViewCell>
+
+			</DataTemplate>
+		</ListView.ItemTemplate>
+	</ListView>
+		<Button x:Name="btntambah" Text="Tambah"></Button>
+			</StackLayout>
+		</ContentPage.Content>
+</ContentPage>

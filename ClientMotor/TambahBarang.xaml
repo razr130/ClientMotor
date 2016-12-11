@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ClientMotor.TambahBarang">
+	<ContentPage.Content>
+		<StackLayout>
+			<Label Text="Masukan Kode Barang :" />
+    <Entry x:Name="txtkode" Placeholder="kode barang"/>
+    <Label Text="Masukan Nama Barang :" />
+    <Entry x:Name="txtNama" Placeholder="nama barang"/>
+			 <Label Text="Masukan Id Jenis Motor :" />
+    <Entry x:Name="txtidjenismotor" Placeholder="id jenis motor"/>
+			<Label Text="Masukan Id Kategori :" />
+    <Entry x:Name="txtidkategori" Placeholder="id kategori"/>
+			 <Label Text="Masukan Stock :" />
+    <Entry x:Name="txtstok" Placeholder="stok"/>
+			<Label Text="Masukan Harga Beli :" />
+    <Entry x:Name="txthargabeli" Placeholder="harga beli"/>
+			 <Label Text="Masukan Harga Jual :" />
+    <Entry x:Name="txthargajual" Placeholder="harga jual"/>
+			
+    <Button x:Name="btnTambahKategori" Text="Tambah" />
+  </StackLayout>
+	</ContentPage.Content>
+</ContentPage>
