@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ClientMotor.BarangPage">
 	<ContentPage.Content>
 		<StackLayout>
+			<Entry x:Name="txtsearch" Placeholder="insert nama barang"/>
+    <Button x:Name="btnsearch" Text="Search" />
 	<ListView x:Name="lstbarang" ItemsSource="{Binding ListBarang}">
 	<ListView.ItemTemplate>
 	<DataTemplate>

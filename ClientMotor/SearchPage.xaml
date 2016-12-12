@@ -1,11 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ClientMotor.KategoriPage">
-<ContentPage.Content>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ClientMotor.SearchPage">
+	<ContentPage.Content>
 		<StackLayout>
-			<Label Text="Masukan nama kategori  :" />
+			
+    <Label Text="Masukan nama kategori  :" />
     <Entry x:Name="txtsearch" Placeholder="insert nama kategori"/>
     <Button x:Name="btnsearch" Text="Search" />
-	<ListView x:Name="lstkategori" ItemsSource="{Binding ListKategori}">
+			<ListView x:Name="lstkategori" ItemsSource="{Binding ListKategori}">
 	<ListView.ItemTemplate>
 	<DataTemplate>
 	<ViewCell>
@@ -23,7 +24,6 @@
 			</DataTemplate>
 		</ListView.ItemTemplate>
 	</ListView>
-		<Button x:Name="btntambah" Text="Tambah"></Button>
-			</StackLayout>
-		</ContentPage.Content>
+  </StackLayout>
+	</ContentPage.Content>
 </ContentPage>

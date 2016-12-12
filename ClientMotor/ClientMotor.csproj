@@ -63,6 +63,9 @@
     <EmbeddedResource Include="EditBarang.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="SearchPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -113,6 +116,11 @@
     <Compile Include="EditBarang.xaml.cs">
       <DependentUpon>EditBarang.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SearchPage.xaml.cs">
+      <DependentUpon>SearchPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\SearchKategori.cs" />
+    <Compile Include="ViewModel\BarangSearch.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
