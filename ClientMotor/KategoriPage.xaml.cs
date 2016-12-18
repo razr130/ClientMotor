@@ -10,11 +10,7 @@ namespace ClientMotor
 {
 	public partial class KategoriPage : ContentPage
 	{
-		void Btnsearch_Clicked(object sender, EventArgs e)
-		{
-			this.BindingContext = new SearchKategori(txtsearch.Text);
-
-		}
+		
 
 		void Btntambah_Clicked(object sender, EventArgs e)
 		{
@@ -36,7 +32,7 @@ namespace ClientMotor
 
 			lstkategori.ItemTapped += Lstkategori_ItemTapped;
 			btntambah.Clicked += Btntambah_Clicked;
-			btnsearch.Clicked += Btnsearch_Clicked;
+
 
 		}
 

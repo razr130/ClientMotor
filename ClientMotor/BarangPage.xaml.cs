@@ -10,7 +10,15 @@ namespace ClientMotor
 	{
 		void Btnsearch_Clicked(object sender, EventArgs e)
 		{
-			this.BindingContext = new BarangSearch(txtsearch.Text);
+			if (switcher.IsToggled.ToString() == "True")
+			{
+				this.BindingContext = new BarangSearch(txtsearch.Text,switcher.IsToggled.ToString());
+			}
+			if (switcher.IsToggled.ToString() == "False")
+			{
+				this.BindingContext = new SearchKategori(txtsearch.Text );
+			}
+
 		}
 
 		void Lstbarang_ItemTapped(object sender, ItemTappedEventArgs e)
@@ -33,11 +41,13 @@ namespace ClientMotor
 			btntambah.Clicked += Btntambah_Clicked;
 			lstbarang.ItemTapped += Lstbarang_ItemTapped;
 			btnsearch.Clicked += Btnsearch_Clicked;
+
 		}
 
 		protected override void OnAppearing()
 		{
 			this.BindingContext = new BarangViewModels();
+
 		}
 	}
 }

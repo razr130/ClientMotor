@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ClientMotor.BarangPage">
 	<ContentPage.Content>
 		<StackLayout>
-			<Entry x:Name="txtsearch" Placeholder="insert nama barang"/>
+			<Label XAlign="Center" Font="10" >Cari berdasar barang ? </Label>
+			<Switch x:Name="switcher" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+			<Entry x:Name="txtsearch" Placeholder="insert nama"/>
     <Button x:Name="btnsearch" Text="Search" />
 	<ListView x:Name="lstbarang" ItemsSource="{Binding ListBarang}">
 	<ListView.ItemTemplate>
@@ -18,6 +20,9 @@
 									</StackLayout>
 									<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
 									<Label Font="8">Stok : </Label><Label x:Name="lblstok" Font="Bold,8" Text="{Binding Stok}" HorizontalOptions="Start"/>
+									</StackLayout>
+										<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" x:Name="stacko">
+									<Label x:Name="lblkat2" Font="8">NamaKat : </Label><Label x:Name="lblkat" Font="Bold,8" Text="{Binding NamaKategori}" HorizontalOptions="Start"/>
 									</StackLayout>
 					</StackLayout>
 

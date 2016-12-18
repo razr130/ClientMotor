@@ -10,9 +10,13 @@
 		<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal" Padding="25,10,55,25">
 
 		<StackLayout HorizontalOptions="StartAndExpand" Orientation="Vertical" >
-					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"><Label Font="8">Merek : </Label><Label x:Name="lblmerek" Font="Bold,8" Text="{Binding NamaMerk}" HorizontalOptions="Start"/></StackLayout>
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"><Label Font="8">Merek : </Label>
+									<Label x:Name="lblmerek" Font="Bold,8" Text="{Binding NamaMerk}" HorizontalOptions="Start"/>
+					</StackLayout>
 
-					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"><Label Font="8">Jenis Motor : </Label><Label x:Name="lbljenis" FontSize="8" Text="{Binding NamaJenisMotor}" HorizontalOptions="Start"/></StackLayout>
+					<StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"><Label Font="8">Jenis Motor : </Label>
+									<Label x:Name="lbljenis" FontSize="8" Text="{Binding NamaJenisMotor}" HorizontalOptions="Start"/>
+					</StackLayout>
 				</StackLayout>
 		</StackLayout>
 	</ViewCell>

@@ -9,7 +9,7 @@
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <local:KategoriPage />
+                <local:BarangPage />
             </x:Arguments>
         </NavigationPage>
     </MasterDetailPage.Detail>

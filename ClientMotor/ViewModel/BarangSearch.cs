@@ -21,17 +21,17 @@ namespace ClientMotor.ViewModel
 
 
 
-		public async void RefreshDataAsync(string namabarang)
+		public async void RefreshDataAsync(string namabarang, string sesi)
 		{
-			RestRequest _request = new RestRequest("api/barang/{namabarang}", Method.GET);
-			_request.AddParameter("namabarang", namabarang, ParameterType.UrlSegment);
+			RestRequest _request = new RestRequest("api/barang/?namabarang=" + namabarang + "&sesi=" + sesi, Method.GET);
+
 			var _response = await _client.Execute<List<Barang>>(_request);
 			ListBarang = new ObservableCollection<Barang>(_response.Data);
 		}
-		public BarangSearch(string namabarang)
+		public BarangSearch(string namabarang, string sesi)
 		{
 
-			RefreshDataAsync(namabarang);
+			RefreshDataAsync(namabarang, sesi);
 
 		}
 	}

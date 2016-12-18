@@ -5,7 +5,7 @@
 			 Padding="0,40,0,0"
 			 Title="Menu">
 	<ContentPage.Content>
-		<StackLayout VerticalOptions="FillAndExpand">
+		<StackLayout VerticalOptions="FillAndExpand" BackgroundColor="Gray">
 			<ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="None">
 				<ListView.ItemTemplate>
 					<DataTemplate>
